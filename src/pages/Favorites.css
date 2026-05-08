@@ -1,0 +1,29 @@
+.favorites-page {
+  padding: calc(var(--nav-height) + 40px) 0 60px;
+  min-height: 100vh;
+}
+
+.favorites-page__header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.favorites-page__count {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border: 1px solid var(--border-hard);
+  padding: 4px 12px;
+}
+
+.favorites-page__cta {
+  margin-top: 20px;
+}
+
+.empty-state--tall {
+  padding-top: 80px;
+}

@@ -1,0 +1,71 @@
+.movies-page {
+  padding: calc(var(--nav-height) + 40px) 0 60px;
+  min-height: 100vh;
+}
+
+.movies-page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.movies-page__sort {
+  display: flex;
+  gap: 8px;
+}
+
+.movies-page__sort .btn {
+  padding: 7px 14px;
+  font-size: 0.85rem;
+}
+
+.movies-page__genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.movies-page__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 48px;
+}
+
+.movies-page__pages {
+  display: flex;
+  gap: 6px;
+}
+
+.movies-page__page-btn {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-hard);
+  color: var(--text-secondary);
+  padding: 7px 13px;
+  font-family: var(--font-display);
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: var(--transition);
+  border-radius: 0;
+}
+
+.movies-page__page-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.movies-page__page-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #000;
+  font-weight: 700;
+}
